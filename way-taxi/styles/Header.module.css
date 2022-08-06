@@ -1,0 +1,128 @@
+.header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header> ul {
+    padding: 0;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: left;
+}
+
+.links {
+    width: 33.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links>li {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.icon {
+    transform: rotate(0deg);
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.links>li:hover .icon {
+    transform: rotate(180deg);
+}
+
+.links>li {
+    height: 2rem;
+}
+
+
+.links li {
+    list-style-type: none;
+    position: relative;
+}
+
+.links>li:hover .sub_menu_links{
+    display: block;
+}
+
+
+.sub_menu_links {
+    position: absolute;
+    width: 15rem;
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 0.3rem 1rem 0.1rem rgba(0,0,0,0.25);
+    padding: 1rem 0rem 0.5rem 0rem;
+    line-height: 3.5rem;
+    left: 1rem;
+    display: none;
+    background-color: #fff;
+    top: 1.7rem;
+}
+
+.sub_menu2_links {
+    position: absolute;
+    right: 2.5rem;
+    width: 15rem;
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 0.3rem 1rem 0.1rem rgba(0,0,0,0.25);
+    padding: 1rem 0rem 0.5rem 0rem;
+    line-height: 3.5rem;
+    display: none;
+    background-color: #fff;
+    top: 3.7rem;
+}
+
+
+.sub_menu_links>li {
+    font-size: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    display: flex;
+}
+
+
+.sub_menu2_links>li {
+    font-size: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    display: flex;
+}
+
+
+.sub_menu_links>li:hover {
+    color: red;
+    background-color: #eee;
+}
+
+.sub_menu2_links>li:hover {
+    color: red;
+    background-color: #eee;
+}
+
+
+
+.registration {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.registration li {
+    list-style-type: none;
+}
+
+.registration>li:hover .sub_menu2_links {
+    display: block;
+}
