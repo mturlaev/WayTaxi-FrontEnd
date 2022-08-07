@@ -1,6 +1,7 @@
 import React from "react";
 import {useState} from 'react'
 import { useDispatch } from "react-redux";
+import Image from 'next/image'
 import styles from '../styles/Register.module.css'
 
 
@@ -44,34 +45,37 @@ const register = () => {
 
   return (
     <div className={styles.login}>
-      <div className={styles.sign_in}>
+    <div className={styles.login_block}>
+      <div className={styles.title}>
         <h1>Регистрация</h1>
       </div>
-      <form className={styles.register_info}>
-        <h4>First Name:</h4>
-        <input type="text" value={name} onChange={changeName}/>
-
-
-        <h4>Last Name:</h4>
-        <input type="text" value={surname} onChange={changeSurname}/>
-
-
-        <h4>Phone Number:</h4>
-        <input type="text" value={phone} onChange={changePhone} placeholder="+ 7 (..." />
-
-
-        <h4>Your Email:</h4>
-        <input type="email" value={email} onChange={changeEmail} placeholder="example@email" />
-
-
-        <h4>Your Password:</h4>
-        <input type="password" value={password} onChange={changePassword} placeholder="Вы видели этот бой?" />
-
-
-        <button onClick={handleReg} className={styles.btn}>Зарегистрироваться</button>
+      <form className={styles.inputs}>
+        <div className={styles.group}>
+          <input required="" type="text" className={styles.input}/>
+          <label>Name</label>
+        </div>
+        <div className={styles.group}>
+          <input required="" type="text" className={styles.input}/>
+          <label>Surname</label>
+        </div>
+        <div className={styles.group}>
+          <input required="" type="text" className={styles.input}/>
+          <label>Email</label>
+        </div>
+        <div className={styles.group}>
+          <input required="" type="text" className={styles.input}/>
+          <label>Password</label>
+        </div>
+        <div className={styles.group}>
+          <input required="" type="text" className={styles.input}/>
+          <label>Phone Number</label>
+        </div>
       </form>
-      {(btnRef) && <div>123</div>}
+      <div className={styles.btn}>
+        <button>Log in</button>
+      </div>
     </div>
+  </div>
   );
 };
 

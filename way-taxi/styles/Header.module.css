@@ -6,15 +6,19 @@
     align-items: center;
 }
 
+
 .header> ul {
     padding: 0;
 }
 
 
 .logo {
+    width: 33.3%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    cursor: pointer ;
 }
+
 
 .links {
     width: 33.3%;
@@ -110,7 +114,7 @@
     color: red;
     background-color: #eee;
 }
-
+/* 
 
 
 .registration {
@@ -126,3 +130,27 @@
 .registration>li:hover .sub_menu2_links {
     display: block;
 }
+
+ */
+
+
+
+ .register {
+     width: 33.3%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0rem 5rem;
+ }
+
+
+ .register button {
+     border-radius: 2rem;
+     font-size: 1rem;
+     cursor: pointer;
+     color: #fff;
+     border: none;
+     height: 1.5rem;
+     width: 7rem;
+     background-color: orange;
+ }

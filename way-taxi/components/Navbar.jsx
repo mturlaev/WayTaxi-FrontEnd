@@ -3,13 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {FiChevronDown} from 'react-icons/fi'
 import {AiOutlineRight} from 'react-icons/ai'
-import client from '../public/png/client.png'
 
 const Header = () => {
     return (
         <nav className={styles.header}>
             <div className={styles.logo}>
-                <h2>Way<span style={{color: "orange"}}>Taxi</span></h2>
+                <Link href="/">
+                  <h2>Way<span style={{color: "orange"}}>Taxi</span></h2>
+                </Link>
             </div>
                 <ul className={styles.links}>
                     <li>
@@ -165,12 +166,33 @@ const Header = () => {
                         </ul>
                     </li>
                 </ul>
-                <ul className={styles.registration}>
+                <div className={styles.register}>
+                    <Link href="/login">
+                      <button>Login</button>
+                    </Link>
+                    <Link href="/register">
+                      <button>Sign Up</button>
+                    </Link>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <ul className={styles.registration}>
                     <li>
                         <Image src={client} width='40' height='40'style={{cursor: 'pointer'}}/>
                         <ul className={styles.sub_menu2_links}>
                             <li>
-                                <Link href="#">
+                                <Link href="/login">
                                      <a>Войти</a>
                                 </Link>
                                 <AiOutlineRight fontSize={'12'}/>
@@ -195,7 +217,8 @@ const Header = () => {
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> */}
+                
         </nav>
     );
 };
