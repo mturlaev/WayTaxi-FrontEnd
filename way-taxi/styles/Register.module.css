@@ -1,0 +1,136 @@
+.login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_block {
+  width: 35rem;
+  background-color: orange;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+}
+
+.title {
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.password {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn button {
+  border-radius: 1rem;
+  width: 13rem;
+  text-align: center;
+  background-color: white;
+  border: none;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+/* From uiverse.io by @G4b413l */
+.group {
+  margin: 2rem 0rem;
+  position: relative;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.group label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
