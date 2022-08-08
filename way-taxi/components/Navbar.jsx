@@ -20,7 +20,7 @@ const Header = () => {
                         <FiChevronDown className={styles.icon}/>
                         <ul className={styles.sub_menu_links}>
                             <li>
-                                <Link href="#">
+                                <Link href="/orders">
                                      <a>История заказов</a>
                                 </Link>
                                 <AiOutlineRight fontSize={'12'}/>
