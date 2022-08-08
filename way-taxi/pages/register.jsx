@@ -3,6 +3,7 @@ import {useState} from 'react'
 import { useDispatch } from "react-redux";
 import Image from 'next/image'
 import styles from '../styles/Register.module.css'
+import { registration } from "../features/userSlice";
 
 
 const register = () => {
@@ -18,8 +19,16 @@ const register = () => {
 
 
     const [btnRef, setBtnRef] = useState(false)
-    const handleReg = () => {
-        setBtnRef(true)
+    const dispatch = useDispatch()
+
+    const handleRegister = () => {
+      dispatch(registration({name, surname, email, password, phone}))
+        setBtnRef(true),
+        setName("")
+        setSurname("")
+        setEmail("")
+        setPassword("")
+        setPhone("")
     }
 
     const changeName = (e) => {
@@ -51,28 +60,28 @@ const register = () => {
       </div>
       <form className={styles.inputs}>
         <div className={styles.group}>
-          <input required="" type="text" className={styles.input}/>
+          <input required="" type="text" className={styles.input} value={name}/>
           <label>Name</label>
         </div>
         <div className={styles.group}>
-          <input required="" type="text" className={styles.input}/>
+          <input required="" type="text" className={styles.input} value={surname}/>
           <label>Surname</label>
         </div>
         <div className={styles.group}>
-          <input required="" type="text" className={styles.input}/>
+          <input required="" type="text" className={styles.input} value={email}/>
           <label>Email</label>
         </div>
         <div className={styles.group}>
-          <input required="" type="text" className={styles.input}/>
+          <input required="" type="password" className={styles.input} value={password}/>
           <label>Password</label>
         </div>
         <div className={styles.group}>
-          <input required="" type="text" className={styles.input}/>
+          <input required="" type="text" className={styles.input} value={phone}/>
           <label>Phone Number</label>
         </div>
       </form>
       <div className={styles.btn}>
-        <button>Log in</button>
+        <button onclick={handleRegister}>Log in</button>
       </div>
     </div>
   </div>
