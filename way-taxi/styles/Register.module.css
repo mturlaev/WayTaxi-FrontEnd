@@ -59,6 +59,7 @@
 .btn button {
   border-radius: 1rem;
   width: 13rem;
+  cursor: pointer;
   text-align: center;
   background-color: white;
   border: none;
