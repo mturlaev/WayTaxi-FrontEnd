@@ -18,7 +18,7 @@ export const commentPost = createAsyncThunk("comments/post", async (_, thunkAPI)
         
     }
 })
-
+//k'dkvfkv'dfk'pdf'vd'fv'df
 
 export const ratingAndCommnet = createSlice({
     name: "ratingAndComments",
