@@ -9,6 +9,14 @@ export const ratingPost = createAsyncThunk("rating/post", async ({taxi, star}, t
     } catch (error) {
         thunkAPI.rejectWithValue(error.message)
     }
+});
+
+export const commentPost = createAsyncThunk("comments/post", async (_, thunkAPI) => {
+    try {
+        const response = await axios.post("http://localhost:4000/")
+    } catch (error) {
+        
+    }
 })
 
 
