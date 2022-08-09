@@ -26,8 +26,8 @@ const Header = () => {
                                 <AiOutlineRight fontSize={'12'}/>
                             </li>
                             <li>
-                                <Link href="#">
-                                     <a>Написать в поддержку</a>
+                                <Link href="/ratingComponent">
+                                     <a>Рейтинг</a>
                                 </Link>
                                 <AiOutlineRight fontSize={'12'}/>
                             </li>
